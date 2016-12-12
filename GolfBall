@@ -1,6 +1,7 @@
 public Class GolfBall
 {
 
+public int id;
 public int cost;
 public String brand;
 
@@ -10,12 +11,17 @@ this.cost = cost;
 this.brand = brand;
 }
 
+public int getID()
+{ 
+return id;
+}
+
 public int getCost()
 {
 return cost;
 }
 
-public String getBrand();
+public String getBrand()
 {
 return brand;
 }

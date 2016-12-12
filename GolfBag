@@ -1,0 +1,31 @@
+import java.util.ArrayList;
+public Class Golfbag
+{
+public ArrayList<GolfBall> bag;
+
+public GolfBag
+{
+bag = new ArrayList<>();
+}
+
+public int totalCost();
+{
+for(Golfball ball: bag)
+{
+total=total + ball.getCost();
+}
+return total;
+}
+
+public void findBall(String brand)
+{
+for(Golfball ball: bag)
+{
+if(ball.getBrand()=brand)
+{
+System.println("Ball number " + ball.getID() + " is a " + brand)
+}
+}
+}
+
+

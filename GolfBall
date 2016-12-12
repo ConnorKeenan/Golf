@@ -1,0 +1,27 @@
+public Class GolfBall
+{
+
+public int cost;
+public String brand;
+
+public GolfBall
+{
+this.cost = cost;
+this.brand = brand;
+}
+
+public int getCost()
+{
+return cost;
+}
+
+public String getBrand();
+{
+return brand;
+}
+
+public String toString()
+{
+return "This golfball is a " + brand + " and has a cost of " + cost;
+}
+}

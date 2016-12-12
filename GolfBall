@@ -1,33 +1,35 @@
 public Class GolfBall
-{
 
+{
 public int id;
 public int cost;
 public String brand;
 
-public GolfBall
+public GolfBall()
 {
 this.cost = cost;
 this.brand = brand;
 }
 
 public int getID()
+ //Accessor
 { 
 return id;
 }
 
 public int getCost()
+ //Accessor
 {
 return cost;
 }
 
-public String getBrand()
+public String getBrand() //Acessor
 {
 return brand;
 }
 
-public String toString()
+public String toString() //Returns everything we need to know about a particular ball
 {
-return "This golfball is a " + brand + " and has a cost of " + cost;
+return "This golfball number " + id + ", is a " + brand + ," and has a cost of " + cost;
 }
 }

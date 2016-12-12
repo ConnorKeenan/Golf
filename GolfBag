@@ -1,31 +1,38 @@
 import java.util.ArrayList;
 public Class Golfbag
 {
-public ArrayList<GolfBall> bag;
+public ArrayList<GolfBall> bag; //MUST BA DECLARED BEFORE USE
 
-public GolfBag
+public GolfBag()
 {
-bag = new ArrayList<>();
+bag = new ArrayList<>(); //STARTS USE
 }
 
 public int totalCost();
 {
-for(Golfball ball: bag)
+for(Golfball ball: bag) //Looks through arraylist, at every ball
 {
-total=total + ball.getCost();
+total = total + ball.getCost(); //Adds each ball's cost to running total
 }
-return total;
+return total; //Returns integer value, as declared in method title
 }
 
 public void findBall(String brand)
 {
-for(Golfball ball: bag)
+for(Golfball ball: bag) //Looks at each ball
+{ 
+if(ball.getBrand()=brand) //Determines whether ball is of certain brand
 {
-if(ball.getBrand()=brand)
-{
-System.println("Ball number " + ball.getID() + " is a " + brand)
+System.println("Ball number " + ball.getID() + " is a " + brand) //prints, no certain return type
 }
 }
 }
 
+public void listAll()
+{
+for(int i = 0; i < bag.size(); i++) //Runs through entire arraylist, uses an integer increment to do so
+{
+System.println(ball.toString()); //Recalls ball's toString and prints the method call
+}
+}
 
